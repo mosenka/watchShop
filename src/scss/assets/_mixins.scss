@@ -1,0 +1,33 @@
+@mixin font($font_name, $file_name, $weight, $style: "normal") {
+	@font-face {
+		src: url("#{$file_name}.woff") format("woff"), url("#{$file_name}.woff2") format("woff2");
+		font-family: $font_name;
+		font-weight: #{$weight};
+		font-style: #{$style};
+		font-display: swap;
+	}
+}
+
+@mixin retina {
+	// stylelint-disable-next-line media-feature-name-no-vendor-prefix
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		@content;
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		// WebKit, Blink, Edge
+		@content;
+	}
+
+	&::-moz-placeholder {
+		// Firefox 19+
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		// Internet Explorer 10-11
+		@content;
+	}
+}

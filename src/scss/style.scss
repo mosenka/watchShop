@@ -1,0 +1,130 @@
+@import "../../node_modules/reset-css/sass/reset";
+@import "assets/mixins";
+@import "assets/fonts";
+@import "assets/vars";
+@import "assets/breakpoint";
+@import "../../node_modules/swiper/swiper.scss";
+
+html {
+	position: relative;
+	min-height: 100vh;
+	box-sizing: border-box;
+	font-family: $font-primary;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	min-width: 320px;
+	font-family: $font-family-Gilroy;
+	font-weight: 400;
+	font-size: $fontsize;
+	line-height: $lineHeight;
+	color: $color-cloud-burst;
+	background: $color-white;
+}
+
+main {
+	flex: 1 1 auto;
+	width: 100%;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: currentColor;
+	cursor: pointer;
+}
+
+svg {
+	display: block;
+	flex: 0 0 auto;
+	width: 100%;
+	height: 100%;
+	fill: currentColor;
+}
+
+img {
+	vertical-align: top;
+	max-width: 100%;
+	user-select: none;
+}
+
+.section {
+	width: 100%;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 8rem;
+	line-height: 1;
+	letter-spacing: -0.03em;
+
+	@include tablet {
+		font-size: 4rem;
+	}
+}
+
+body.is-fixed {
+	z-index: 90;
+	overflow: hidden;
+	transition: opacity 0.4s, right 0.4s;
+
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 89;
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: rgba(34, 26, 25, 1);
+		opacity: 0.5;
+		transition: opacity 0.3s, right 0.2s;
+	}
+
+	@media (max-width: 767.98px) {
+		display: none;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	min-width: 320px;
+
+	@include desktop-xl {
+		width: 1140px;
+	}
+
+	@include desktop {
+		width: 1140px;
+	}
+
+	@include laptop {
+		width: 960px;
+	}
+
+	@include tablet {
+		width: 720px;
+	}
+
+	@include mobile-hr {
+		width: 540px;
+	}
+
+	@include mobile {
+		padding: 0 1.5rem;
+		width: 100%;
+	}
+}

@@ -1,0 +1,69 @@
+include mixins
+
+block vars
+	- const baseDir = './'
+	-
+		const title = 'Главная'
+		const description = 'описание страницы'
+	-
+		const html = {
+			attrs: {
+				lang: 'ru'
+			},
+			classList: []
+		}
+	-
+		const body = {
+			attrs: {},
+			classList: []
+		}
+	-
+		const meta = {
+			charset: 'utf-8',
+			description: description,
+			formatDetection: {
+				address: true,
+				date: true,
+				email: true,
+				telephone: true
+			},
+			keywords: [],
+			viewport: 'width=device-width',
+			XUACompatible: 'IE=edge'
+
+		}
+	-
+		const link = {
+
+
+		}
+
+html(class=html.classList)&attributes(html.attrs)
+	head
+		block head-start
+		block meta
+			if meta.charset !== null
+				meta(charset!=meta.charset)
+			if meta.XUACompatible !== null
+				meta(http-equiv="X-UA-Compatible" content!=meta.XUACompatible)
+			if meta.viewport !== null
+				meta(name="viewport" content!=meta.viewport)
+			if meta.description !== null
+				meta(name="description" content!=meta.description)
+			if meta.keywords !== null && !(Array.isArray(meta.keywords) && !meta.keywords.length)
+				meta(name="keywords" content!=(Array.isArray(meta.keywords) ? meta.keywords.join(', ') : meta.keywords))
+			if title !== null
+				title!= title
+		block links
+		block styles
+			link(rel="stylesheet" href!=`${baseDir}css/style.min.css?v=${Date.now()}`)
+		block head-end
+	body(class=body.classList)&attributes(body.attrs)
+		block body-start
+		block content
+		block scripts
+			script(src!=`${baseDir}js/app.js?v=${Date.now()}`)
+		block body-end
+
+
+
