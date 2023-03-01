@@ -29,7 +29,7 @@ import { lintJS } from './gulp/tasks/lintJS.js';
 import { lintSCSS } from './gulp/tasks/lintSCSS.js';
 import { lintPUG } from './gulp/tasks/lintPUG.js';
 
-const usePUG = true;
+const usePUG = false;
 
 
 function watcher() {

@@ -1,5 +1,5 @@
 {
-	"name": "labsales",
+	"name": "watch-shop",
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
@@ -17,7 +17,6 @@
 	"author": "Alina mosenka",
 	"license": "ISC",
 	"dependencies": {
-		"inputmask": "^5.0.7",
 		"lazysizes": "^5.3.2",
 		"reset-css": "^5.0.1"
 	},

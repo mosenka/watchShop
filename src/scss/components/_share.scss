@@ -1,0 +1,25 @@
+.share {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 1.8rem;
+		}
+	}
+
+	&__icon {
+		width: 22px;
+		height: 22px;
+		transition: color 0.3s;
+
+		&:not([disabled]):hover,
+		&:not([disabled]):focus,
+		&:not([disabled]):active {
+			color: lighten($color-rangoon-green, 30%)
+		}
+	}
+}

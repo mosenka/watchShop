@@ -1,0 +1,23 @@
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	&__img {
+		width: 20px;
+		height: 21px;
+	}
+
+	&__text {
+		letter-spacing: 0.14em;
+		color: $color-fuscous-gray;
+		transition: color 0.3s;
+
+		&:not([disabled]):hover,
+		&:not([disabled]):focus,
+		&:not([disabled]):active {
+			color: darken($color-fuscous-gray, 10%);
+		}
+
+	}
+}

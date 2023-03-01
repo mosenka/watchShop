@@ -1,0 +1,50 @@
+.icons-panel {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 0.5rem;
+
+	&__item {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 100%;
+
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	&__icon {
+		width: 20px;
+		height: 18px;
+
+		&--heart {
+			fill: $color-rangoon-green;
+			stroke: $color-rangoon-green;
+			stroke-width: 0.75;
+		}
+
+		&:not([disabled]):hover,
+		&:not([disabled]):focus,
+		&:not([disabled]):active {
+			color: lighten($color-rangoon-green, 30%)
+		}
+	}
+
+	&__count {
+		position: absolute;
+		right: -8px;
+		top: -4px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 13px;
+		height: 13px;
+		font-size: 0.9rem;
+		background-color: $color-rose-fog;
+	}
+}

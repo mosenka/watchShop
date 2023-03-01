@@ -1,0 +1,111 @@
+.advantages {
+	&__section {
+		overflow: hidden;
+		padding: 5rem 0;
+
+		&::before {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 0;
+			display: block;
+			width: 50%;
+			height: calc(100% + 100px);
+			background-image: url("../img/bg_advantages.svg");
+			background-position: 100% 0;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+		}
+	}
+
+	&__slider {
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.advantage {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__img-wrapper {
+		position: relative;
+		overflow: hidden;
+		width: 520px;
+		height: 414px;
+	}
+
+	&__img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 100%;
+		height: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	&__text-wrapper {
+		flex: 0 0 450px;
+		padding-left: 7rem;
+	}
+
+	&__title {
+		padding-bottom: 3.8rem;
+	}
+
+	&__desc {
+		padding-bottom: 4.5rem;
+	}
+
+	&__button {
+		padding: 2.6rem 3.8rem;
+	}
+}
+
+.slider-nav {
+	cursor: pointer;
+
+	svg {
+		width: 5px;
+		height: 10px;
+		fill: none;
+		stroke: $color-rangoon-green;
+		stroke-width: 0.5;
+		transition: stroke 0.3s;
+
+		&:not([disabled]):hover,
+		&:not([disabled]):focus,
+		&:not([disabled]):active {
+			stroke: lighten($color-rangoon-green, 30%);
+		}
+	}
+
+	&__next {
+		transform: rotate(180deg);
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 2rem;
+		width: 85%;
+	}
+}
+
+.slider-counter {
+	&__item {
+		display: none;
+	}
+
+	&__item-active {
+		display: inline-block;
+		padding: 0 2.5rem;
+		font-family: $font-family-prata;
+		font-size: 1.2rem;
+	}
+}

@@ -1,1 +1,313 @@
-<html lang="ru"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width"/><meta name="description" content="описание страницы"/><title>Главная</title><link rel="stylesheet" href="./css/style.min.css?v=1676270128704"/></head><body><p>test</p><script src="./js/app.js?v=1676270128704"></script></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, maximum-scale=1">
+
+	<link rel="preload" as="image" imagesrcset="img/logo.svg" type="image/svg+xml">
+	<link rel="preload" as="image" href="img/watch.png">
+	<link rel="preload" as="image" imagesrcset="img/watch.webp" type="image/webp">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230301115938">
+	<link type="text/css" rel="preload" href="css/app.min.css?_v=20230301115938" as="style" onload="this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="css/app.min.css?_v=20230301115938"></noscript>
+	<title>Главная</title>
+</head>
+
+	<body class="body">
+		<header class="header">
+	<div class="header__inner">
+		<div class="container header__container">
+			<a href="/" class="logo header__logo">
+	<img src="./img/logo.svg" alt="company name" class="logo__img" width="20" height="21">
+	<span class="text--s12 text--playfair logo__text">CONQUEST</span>
+</a>
+
+			<nav class="menu">
+	<ul class="menu__body">
+		<li class="menu__item">
+			<a href="#item1" class="menu__link bottom-menu__link">Каталог</a>
+		</li>
+		<li class="menu__item">
+			<a href="#item2" class="menu__link bottom-menu__link">Акции</a>
+		</li>
+		<li class="menu__item">
+			<a href="#item3" class="menu__link bottom-menu__link">Доставка</a>
+		</li>
+		<li class="menu__item">
+			<a href="#item4" class="menu__link bottom-menu__link">Контакты</a>
+		</li>
+	</ul>
+</nav>
+
+			<div class="icons-panel">
+	<a href="#search" class="icons-panel__item">
+		<svg class="icons-panel__icon">
+	<use xlink:href="./img/icons.svg#glass"></use>
+</svg>
+
+	</a>
+	<a href="#likes" class="icons-panel__item">
+		<svg class="icons-panel__icon icons-panel__icon--heart">
+	<use xlink:href="./img/icons.svg#heart"></use>
+</svg>
+
+
+		<span class="icons-panel__count">1</span>
+	</a>
+	<a href="#cart" class="icons-panel__item">
+		<svg class="icons-panel__icon">
+	<use xlink:href="./img/icons.svg#cart"></use>
+</svg>
+
+	</a>
+</div>
+
+		</div>
+	</div>
+	<div class="conatiner">
+		<div class="offer">
+	<div class="container offer__container">
+		<div class="offer__text-wrapper">
+			<h1 class="title box-line--before offer__title">Весна/Лето 2019</h1>
+			<p class="text--playfair offer__subtitle">Коллекция
+			</p>
+			<p class="text--light offer__desc">Швейцарские часы в наличии в Москве	и с доставкой по всему миру</p>
+			<button type="button" class="btn-reset text--medium text--s12 button--brown offer__button">Смотреть каталог</button>
+		</div>
+		<div class="offer__img-wrapper">
+			<span class="text--s16 text--prata box-line--after offer__price">22 000 &#8381;</span>
+			<picture><source srcset="./img/watch.webp" type="image/webp"><img src="./img/watch.png" alt="watch" class="offer__img"></picture>
+			<span class="text--s16 text--prata box-line--before offer__value">28 мм диаметр</span>
+		</div>
+	</div>
+</div>
+
+	</div>
+</header>
+
+		<main class="main">
+	<section class="section popular__section">
+	<div class="container popular__container">
+		<h2 class="title popular__title">
+			Популярные модели
+		</h2>
+		<a href="#getAll" class="text--medium text--s16 popular__more">Смотреть все</a>
+		<div class="popular__list">
+			<div class="popular__item popular-item">
+				<span class="text--bold text--playfair popular-item__subtitle">Rado</span>
+				<span class="text--prata text--s12 popular-item__price">65 300 &#8381;</span>
+				<div class="popular-item__img-wrapper">
+					<picture><source srcset="./img/watch_1.webp" type="image/webp"><img src="./img/watch_1.png" alt="item 1" class="popular-item__img"></picture>
+				</div>
+				<div class="popular-item__more-wrapper">
+					<a href="/#more" class="text--playfair text--s16 box-line--before popular-item__link">Подробнее</a>
+				</div>
+			</div>
+			<div class="popular__item popular-item">
+				<span class="text--bold text--playfair popular-item__subtitle">BVLGARI</span>
+				<span class="text--prata text--s12 popular-item__price">81 700 &#8381;</span>
+				<div class="popular-item__img-wrapper">
+					<picture><source srcset="./img/watch_3.webp" type="image/webp"><img src="./img/watch_3.png" alt="item 2" class="popular-item__img"></picture>
+				</div>
+				<div class="popular-item__more-wrapper">
+					<a href="/#more" class="text--playfair text--s16 box-line--before popular-item__link">Подробнее</a>
+				</div>
+			</div>
+			<div class="popular__item popular-item">
+				<span class="text--bold text--playfair popular-item__subtitle">BVLGARI</span>
+				<span class="text--prata text--s12 popular-item__price">72 700 &#8381;</span>
+				<div class="popular-item__img-wrapper">
+					<picture><source srcset="./img/watch_4.webp" type="image/webp"><img src="./img/watch_4.png" alt="item 3" class="popular-item__img"></picture>
+				</div>
+				<div class="popular-item__more-wrapper">
+					<a href="/#more" class="text--playfair text--s16 box-line--before popular-item__link">Подробнее</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="section section--beige advantages__section">
+	<div class="container">
+		<div class="advantages__slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide advantage">
+					<div class="advantage__wrapper">
+						<div class="advantage__img-wrapper">
+							<picture><source srcset="./img/photo_banner.webp" type="image/webp"><img src="./img/photo_banner.jpg" alt="banner name" class="advantage__img"></picture>
+						</div>
+						<div class="advantage__text-wrapper">
+							<h2 class="title advantage__title">Подлинное качество</h2>
+							<p class="text--s16 advantage__desc">Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.</p>
+							<button type="button" class="btn-reset text--medium text--s12 button--beige advantage__button"> Смотреть каталог</button>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide advantage">
+					<div class="advantage__wrapper">
+						<div class="advantage__img-wrapper">
+							<picture><source srcset="./img/photo_1.webp" type="image/webp"><img src="./img/photo_1.jpg" alt="banner2 name" class="advantage__img"></picture>
+						</div>
+						<div class="advantage__text-wrapper">
+							<h2 class="title advantage__title">Непревзойденный стиль</h2>
+							<p class="text--s16 advantage__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam commodi doloribus facilis officia provident quasi quia, tempora voluptatibus. Impedit, inventore?</p>
+							<button type="button" class="btn-reset text--medium text--s12 button--beige advantage__button"> Смотреть каталог</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="swiper-slide advantage">
+					<div class="advantage__wrapper">
+						<div class="advantage__img-wrapper">
+							<picture><source srcset="./img/photo_2.webp" type="image/webp"><img src="./img/photo_2.jpg" alt="banner2 name" class="advantage__img"></picture>
+						</div>
+						<div class="advantage__text-wrapper">
+							<h2 class="title advantage__title">Динамичность линий</h2>
+							<p class="text--s16 advantage__desc"> Accusantium adipisci amet aperiam asperiores assumenda beatae cupiditate dignissimos dolor dolores doloribus eos exercitationem in ipsum itaque laboriosam libero mollitia nam natus numquam obcaecati optio qui, quis quos ratione repudiandae unde veniam voluptatum.</p>
+							<button type="button" class="btn-reset text--medium text--s12 button--beige advantage__button"> Смотреть каталог</button>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="slider-nav__wrapper">
+				<div class="slider-nav slider-nav__prev">
+					<svg class="">
+	<use xlink:href="./img/icons.svg#arrow"></use>
+</svg>
+
+				</div>
+				<div class="slider-counter"></div>
+				<div class="slider-nav slider-nav__next">
+					<svg class="">
+	<use xlink:href="./img/icons.svg#arrow"></use>
+</svg>
+
+				</div>
+			</div>
+<!--			<div class="slider-counter"></div>-->
+		</div>
+	</div>
+	<p>advantages</p>
+</section>
+
+	<section class="section subscription__section">
+	<div class="container">
+		<div class="subscription__wrapper">
+			<div class="subscription__text-wrapper">
+				<h2 class="title subscription__title">Следите за нашими новостями</h2>
+				<div class="subscription__desc">Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и акциях первыми.
+				</div>
+				<div class="subscription__share share__wrapper">
+					<a href="#sharing" class="share__item">
+						<svg class="share__icon">
+	<use xlink:href="./img/icons.svg#instagram"></use>
+</svg>
+
+					</a>
+					<a href="#sharing" class="share__item">
+						<svg class="share__icon">
+	<use xlink:href="./img/icons.svg#facebook"></use>
+</svg>
+
+					</a>
+					<a href="#sharing" class="share__item">
+						<svg class="share__icon">
+	<use xlink:href="./img/icons.svg#twitter"></use>
+</svg>
+
+					</a>
+				</div>
+			</div>
+			<div class="subscription__img-wrapper">
+				<div class="subscription__item">
+					<picture><source srcset="./img/photo_1.webp" type="image/webp"><img src="./img/photo_1.jpg" alt="photo 1" class="subscription__img"></picture>
+				</div>
+				<div class="subscription__item">
+					<picture><source srcset="./img/photo_2.webp" type="image/webp"><img src="./img/photo_2.jpg" alt="photo 2" class="subscription__img"></picture>
+				</div>
+				<div class="subscription__item">
+					<picture><source srcset="./img/photo_3.webp" type="image/webp"><img src="./img/photo_3.jpg" alt="photo 3" class="subscription__img"></picture>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+</main>
+
+		<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__column">
+			<a href="/" class="logo footer-logo">
+				<img src="./img/logo-white.svg" alt="company name" class="logo__img footer-logo__img" width="25" height="25">
+				<span class="text--boldtext--s14 text--playfair logo__text footer-logo__text">CONQUEST</span>
+			</a>
+			<div class="footer__item">
+				<a href="tel:84994504797" class="footer__phone">8 (499) 450-47-97
+				</a>
+			</div>
+			<div class="footer__item">
+				<a href="mailto:info@conquest.watch.ru" class="footer__mail">info@conquest.watch.ru</a>
+			</div>
+		</div>
+		<div class="footer__column">
+			<div class="footer__subtitle">
+				о компании
+			</div>
+			<a href="#foterLink" class="footer__item">
+				Наши магазины
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Вакансии
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Сертификаты
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Отзывы
+			</a>
+		</div>
+		<div class="footer__column">
+			<div class="footer__subtitle">
+				покупателям
+			</div>
+			<a href="#foterLink" class="footer__item">
+				Каталог товаров
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Как заказать?
+			</a>
+			<a href="#foterLink" class="footer__item">
+				FAQ
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Корпоративным клиентам
+			</a>
+		</div>
+		<div class="footer__column">
+			<div class="footer__subtitle">
+				оплата и доставка
+			</div>
+			<a href="#foterLink" class="footer__item">
+				Способы оплаты
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Время доставки
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Гарантии и ремонт
+			</a>
+			<a href="#foterLink" class="footer__item">
+				Возврат и компенсация
+			</a>
+		</div>
+	</div>
+</footer>
+
+		<?xml version="1.0" encoding="utf-8"?><svg style="position: absolute; width: 0; height: 0;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 7 12" id="arrow"><path d="M6 1L1 6l5 5"/></symbol><symbol viewBox="0 0 18 16" id="cart"><path d="M17.896 3.052a.586.586 0 00-.449-.233L6.282 2.364c-.32-.013-.588.22-.602.522-.014.3.233.555.552.568l10.41.424-2.047 6.031H5.487L3.84 1.447a.554.554 0 00-.357-.41L.79.038a.59.59 0 00-.75.309c-.116.28.03.597.326.707l2.397.89 1.674 8.61a.57.57 0 00.568.447h.278l-.634 1.664a.433.433 0 00.06.416.49.49 0 00.393.193h.445c-.276.29-.445.671-.445 1.09 0 .903.777 1.637 1.732 1.637.956 0 1.733-.734 1.733-1.636 0-.42-.17-.802-.445-1.091H11.9c-.276.29-.445.671-.445 1.09 0 .903.777 1.637 1.732 1.637.956 0 1.733-.734 1.733-1.636 0-.42-.17-.802-.445-1.091h.541a.468.468 0 00.481-.455.468.468 0 00-.481-.454h-9.23L6.307 11h8.71a.575.575 0 00.55-.379l2.406-7.091a.52.52 0 00-.076-.478zM6.834 15.092c-.424 0-.77-.327-.77-.728 0-.401.346-.727.77-.727.425 0 .77.326.77.727 0 .401-.345.727-.77.727zm6.353 0c-.425 0-.77-.327-.77-.728 0-.401.345-.727.77-.727.425 0 .77.326.77.727 0 .401-.345.727-.77.727z"/></symbol><symbol viewBox="0 0 12 22" id="facebook"><path d="M8.832.571c-3.136 0-5.284 1.73-5.284 4.906v2.737H0v3.713h3.548v9.522h4.24v-9.522h3.539l.531-3.713h-4.07v-2.37c0-1.075.332-1.808 2.037-1.808H12V.718C11.624.672 10.334.571 8.832.571z"/></symbol><symbol viewBox="0 0 16 16" id="glass"><path d="M15.804 14.864l-3.846-3.847A6.745 6.745 0 006.743 0a6.743 6.743 0 100 13.486 6.707 6.707 0 004.27-1.525l3.847 3.843a.666.666 0 00.944-.94zm-9.061-2.72a5.408 5.408 0 01-5.404-5.401 5.41 5.41 0 015.404-5.404 5.413 5.413 0 015.404 5.404 5.41 5.41 0 01-5.404 5.4z"/></symbol><symbol viewBox="0 0 21 18" id="heart"><path d="M19.969 5.771c-.278-2.765-2.438-4.77-5.142-4.77-1.802 0-3.451.877-4.38 2.285C9.527 1.86 7.947 1 6.173 1 3.47 1 1.31 3.006 1.032 5.77c-.022.123-.112.766.161 1.814.394 1.512 1.304 2.887 2.63 3.976l6.62 5.44 6.733-5.44c1.327-1.09 2.237-2.464 2.63-3.976.274-1.048.184-1.69.163-1.813zm-.874 1.661c-.36 1.38-1.193 2.639-2.408 3.636l-6.24 5.042-6.132-5.041c-1.217-.999-2.05-2.256-2.41-3.637-.259-.992-.153-1.552-.152-1.556l.005-.033c.238-2.423 2.094-4.181 4.415-4.181 1.713 0 3.22.953 3.936 2.487l.337.723.336-.723c.704-1.51 2.292-2.487 4.045-2.487 2.32 0 4.178 1.759 4.42 4.212 0 .006.107.566-.152 1.558z"/></symbol><symbol viewBox="0 0 23 24" id="instagram"><path d="M6.657.673C2.986.673 0 3.64 0 7.283v9.558c0 3.644 2.986 6.608 6.657 6.608h9.686c3.671 0 6.657-2.964 6.657-6.608V7.283c0-3.644-2.986-6.61-6.657-6.61H6.657zm0 1.958h9.686c2.613 0 4.686 2.058 4.686 4.652v9.558c0 2.593-2.073 4.65-4.686 4.65H6.657c-2.613 0-4.685-2.056-4.685-4.65V7.283c0-2.594 2.072-4.652 4.685-4.652zM17.673 4.59c-.762 0-1.38.613-1.38 1.37 0 .756.618 1.368 1.38 1.368.762 0 1.379-.612 1.379-1.369 0-.756-.617-1.369-1.38-1.369zM11.5 6.197c-3.251 0-5.907 2.637-5.907 5.864s2.656 5.864 5.907 5.864 5.909-2.637 5.909-5.864-2.658-5.864-5.909-5.864zm0 1.958c2.185 0 3.937 1.737 3.937 3.906 0 2.17-1.752 3.906-3.937 3.906-2.185 0-3.935-1.737-3.935-3.906 0-2.17 1.75-3.906 3.935-3.906z"/></symbol><symbol viewBox="0 0 22 18" id="twitter"><path d="M22 2.39a9.354 9.354 0 01-2.592.679A4.368 4.368 0 0021.392.683a9.283 9.283 0 01-2.866 1.046A4.607 4.607 0 0015.232.367c-2.493 0-4.513 1.931-4.513 4.313 0 .338.04.667.117.982-3.751-.18-7.077-1.897-9.303-4.505a4.145 4.145 0 00-.611 2.167c0 1.497.796 2.816 2.008 3.59a4.65 4.65 0 01-2.045-.54v.055c0 2.09 1.555 3.832 3.62 4.228a4.71 4.71 0 01-2.038.074c.575 1.713 2.241 2.96 4.216 2.995a9.331 9.331 0 01-5.606 1.846A9.67 9.67 0 010 15.512a13.215 13.215 0 006.92 1.937c8.3 0 12.84-6.57 12.84-12.27 0-.187-.005-.372-.013-.557a8.974 8.974 0 002.252-2.233"/></symbol></svg>
+		<script src="./js/app.js?_v=20230301115938"></script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+.menu {
+	flex: 1 1 auto;
+	text-align: center;
+
+	&__body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+	}
+
+	&__link {
+		padding: 1rem 2rem;
+		color: $color-fuscous-gray;
+
+		&:not([disabled]):hover,
+		&:not([disabled]):focus,
+		&:not([disabled]):active {
+			color: darken($color-fuscous-gray, 40%);
+		}
+	}
+}

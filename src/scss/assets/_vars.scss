@@ -1,21 +1,32 @@
 // common settings
-$fontsize: 2.2rem;
-$lineHeight: 1.4;
+$fontsize: 1.4rem;
+$lineHeight: 1.5;
 
 // fonts
 $font-primary: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, oxygen, ubuntu, cantarell,"Open Sans","Helvetica Neue", sans-serif;
-$font-family-Gilroy: "Gilroy", sans-serif;
+$font-family-roboto: "Roboto", sans-serif;
+$font-family-prata: "Prata", serif;
+$font-family-playfair-display: "Playfair Display", serif;
 
 // colors
 $color-black: #000;
 $color-white: #FFF;
-$color-cloud-burst: #212D55;
-$color-picton-blue: #31BEF4;
-$color-accent: $color-picton-blue;
+$color-spring-wood: #FDFDFB;
+$color-fuscous-gray: #555248;
+$color-rangoon-green: #1B1A17;
+$color-spring-wood-dark: #F7F5EF;
+$color-cameo: #D4B098;
+$color-masala: #444240;
+$color-rose-fog: #E6C8B4;
+$color-olive-haze: #8B8371;
+$color-ash: #C4C0B6;
+$color-fuscous-gray: #5C5C50;
+
+// $color-accent: $color-picton-blue;
 
 // Settings
 $desktop-xl: 1440;
-$desktop: 1300;
+$desktop: 1200;
 $laptop: 992;
 $tablet: 768;
 $mobile-hr: 576;

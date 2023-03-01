@@ -1,0 +1,70 @@
+.subscription {
+	&__section {
+		padding: 8rem 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__text-wrapper {
+		position: relative;
+		margin-right: 7rem;
+	}
+
+	&__title {
+		padding-bottom: 4rem;
+	}
+
+	&__desc {
+	}
+
+	&__img-wrapper {
+		display: grid;
+		flex: 0 0 630px;
+		grid-template-areas:
+			"item1 item3"
+			"item2 item3";
+		grid-template-columns: 242px 1fr;
+		grid-template-rows: 222px 1fr;
+		height: 100%;
+		min-height: 460px;
+		gap: 1rem 1rem;
+	}
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+
+		&:first-child {
+			grid-area: item1;
+		}
+
+		&:last-child {
+			grid-area: item3;
+			width: auto;
+			height: 100%;
+		}
+
+		&:nth-child(2) {
+			grid-area: item2;
+		}
+	}
+
+	&__img {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 100%;
+		height: auto;
+		transform: translate(-50%, -50%);
+	}
+
+	&__share {
+		width: auto;
+		margin-top: 12rem;
+	}
+}
